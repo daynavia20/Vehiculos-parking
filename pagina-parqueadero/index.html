@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+    <h1>Parqueadero</h1>
+    <form class="formulario" id="formulario">
+        <h4> Ingresar Vehículo </h4>
+
+        <select class="input" name="tipo" id="tipo" required>
+            <option disabled selected>Seleccione el tipo de Vehículo</option>
+            <option value="Automovil">Automovil</option>
+            <option value="Moto">Moto</option>
+        </select></br>
+
+        <!-- <label for="placa"> Placa </label> -->
+        <input class="input" name="placa" id="placa" placeholder="Ingrese la Matricula"></input></br>
+
+        <select class="input" name="marca" id="marca" required>
+            <option value="" disabled selected>Seleccione la marca del vehiculo </option>
+        
+            <option value="BMW">BMW</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborgini">Lamborgini</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Kia">Kia</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Zusuki">Zusuki</option>
+            <option value="Kawasaki">Kawasaki</option>
+            <option value="Honda">Honda</option>
+            <option value="Ducati">Ducati</option>
+            <option value="Yamaha">Yamaha</option>
+            <option value="AKT">AKT</option>
+            <option value="TVS">TVS</option>
+            <option value="XTZ">XTZ</option>
+            <option value="Auteco">Auteco</option>
+
+        </select></br>
+        
+        <!-- <label  for="modelo"> Modelo </label> -->
+        <input class="input" name="modelo" id="modelo" placeholder="Ingrese el Modelo"></input></br>
+
+        <select class="input" name="color" id="color" required>
+            <option value="" disabled selected>Elige el color</option>
+            <option value="Negro">Negro</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Verde">Verde</option>
+            <option value="Rosado">Rosado</option>
+            <option value="Plateado">Plateado</option>
+            <option value="Azul">Azul</option>
+            <option value="Marron">Marron</option>
+            <option value="Morado">Morado</option>
+            <option value="Naranja">Naranja</option>
+        </select></br>
+
+        <div class="circulo">
+            <label> Tipo de estadia </label>
+            <input name="estadia" id="hora" type="radio"> Hora</input>
+            <input name="estadia" id="dia" type="radio" onclick=" usuario()"> Día</input>
+            <input name="estadia" id="mes" type="radio" onclick=" usuario()"> Mes</input>
+        </div>
+
+        <button class= "boton" type="submit" id="ingreso"> Ingresar </button>
+    </form>
+
+    <form  id="formulario2" class="formulario2">
+        <h3>Ingresar usuario</h3>
+        <!-- <label for="nombre">Usuario</label> -->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+        <!-- <label for="apellido">Usuario</label> -->
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
+        <!-- <label for="Cc ">Identificacion</label> -->
+        <input type="text" name="identificacion" id="identificacion" placeholder="Identificacion"><br>
+        <!-- <label for="correo">Email</label> -->
+        <input type="text" name="email" id="email" placeholder="Correo electronico"><br>
+        <!-- <label for="celular">Celular</label> -->
+        <input type="text" name="celular" id="celular" placeholder="Numero de celular"><br>
+
+        <button class= "button" type="submit" id="ingresar" onclick="ocultar()">Ingresar usuario</button>
+    </form>
+
+</body>
+<script src="js.js"> </script>
+</html>
